@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>SAFE-Ágil | Processo de Software Corporativo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --verde: #2e7d32;
+            --azul: #1565c0;
+            --cinza: #f4f6f8;
+            --texto: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: var(--cinza);
+            color: var(--texto);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(90deg, var(--verde), var(--azul));
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 12px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: var(--azul);
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            color: var(--verde);
+            margin-bottom: 15px;
+            border-left: 5px solid var(--azul);
+            padding-left: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th {
+            background-color: var(--azul);
+            color: #fff;
+            padding: 10px;
+        }
+
+        table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .diagrama {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .diagrama img {
+            max-width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #777;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>SAFE-Ágil</h1>
+    <p>Processo de Desenvolvimento de Software Corporativo<br>
+       Projeto Conta Comigo: SAFE – IFRN
+    </p>
+</header>
+
+<nav>
+    <a href="#visao">Visão Geral</a>
+    <a href="#diagrama">Diagrama</a>
+    <a href="#atividades">Atividades</a>
+    <a href="#papeis">Papéis</a>
+    <a href="#praticas">Práticas Ágeis</a>
+</nav>
+
+<section id="visao">
+    <h2>Visão Geral do Processo</h2>
+    <p>
+        O <strong>SAFE-Ágil</strong> é um processo ágil definido para apoiar o desenvolvimento
+        e a evolução do sistema <strong>Conta Comigo: SAFE</strong>, cujo objetivo é gerenciar
+        bolsas e auxílios fornecidos aos alunos do IFRN.
+    </p>
+    <p>
+        O processo busca garantir maior transparência para os alunos e maior eficiência
+        no trabalho realizado pelas assistentes sociais, combinando práticas ágeis com
+        as necessidades de um ambiente corporativo e institucional.
+    </p>
+</section>
+
+<section id="diagrama">
+    <h2>Diagrama de Atividades do Processo</h2>
+    <div class="diagrama">
+        <!-- Substitua pelo nome da sua imagem -->
+        <img src="diagrama-processo.png" alt="Diagrama de Atividades SAFE-Ágil">
+        <p><em>Fluxo iterativo e incremental do SAFE-Ágil</em></p>
+    </div>
+</section>
+
+<section id="atividades">
+    <h2>Atividades do Processo</h2>
+    <ul>
+        <li><strong>Identificação da Necessidade:</strong> Levantamento das demandas junto à assistência estudantil do IFRN.</li>
+        <li><strong>Levantamento e Refinamento de Requisitos:</strong> Reuniões com assistentes sociais e definição de histórias de usuário.</li>
+        <li><strong>Priorização do Backlog:</strong> Organização das demandas pelo Product Owner conforme impacto institucional.</li>
+        <li><strong>Planejamento da Sprint:</strong> Definição do escopo e metas do ciclo de desenvolvimento.</li>
+        <li><strong>Desenvolvimento:</strong> Implementação incremental das funcionalidades do sistema.</li>
+        <li><strong>Testes:</strong> Execução de testes funcionais, de regressão e validação com usuários.</li>
+        <li><strong>Implantação:</strong> Publicação do sistema em ambiente institucional controlado.</li>
+        <li><strong>Monitoramento e Feedback:</strong> Coleta de feedback e melhoria contínua do sistema.</li>
+    </ul>
+</section>
+
+<section id="papeis">
+    <h2>Papéis e Responsabilidades</h2>
+    <table>
+        <tr>
+            <th>Papel</th>
+            <th>Responsabilidades</th>
+        </tr>
+        <tr>
+            <td>Product Owner</td>
+            <td>Representar os stakeholders e priorizar o backlog.</td>
+        </tr>
+        <tr>
+            <td>Scrum Master</td>
+            <td>Garantir o correto uso do processo e remover impedimentos.</td>
+        </tr>
+        <tr>
+            <td>Desenvolvedores</td>
+            <td>Implementar e manter as funcionalidades do sistema.</td>
+        </tr>
+        <tr>
+            <td>QA/Testador</td>
+            <td>Planejar e executar testes de qualidade.</td>
+        </tr>
+        <tr>
+            <td>DevOps</td>
+            <td>Realizar a implantação e o monitoramento do sistema.</td>
+        </tr>
+        <tr>
+            <td>Assistentes Sociais</td>
+            <td>Validar funcionalidades e fornecer feedback.</td>
+        </tr>
+    </table>
+</section>
+
+<section id="praticas">
+    <h2>Práticas Ágeis Aplicadas</h2>
+    <ul>
+        <li>Planejamento de Sprint</li>
+        <li>Daily Meeting</li>
+        <li>Backlog priorizado</li>
+        <li>Integração contínua</li>
+        <li>Testes contínuos</li>
+        <li>Deploy incremental</li>
+        <li>Retrospectiva</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Equipe: Emanuelly Karine e Rebeca Noemi</p>
+</footer>
+
+</body>
+</html>
