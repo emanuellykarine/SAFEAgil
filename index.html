@@ -79,6 +79,16 @@
             padding-left: 10px;
         }
 
+        h3 {
+            color: var(--azul);
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
         ul {
             margin-left: 20px;
         }
@@ -102,6 +112,7 @@
         table td {
             padding: 10px;
             border: 1px solid #ddd;
+            vertical-align: top;
         }
 
         .diagrama {
@@ -129,8 +140,9 @@
 
 <header>
     <h1>SAFE-Ágil</h1>
-    <p>Processo de Desenvolvimento de Software Corporativo<br>
-       Projeto Conta Comigo: SAFE – IFRN
+    <p>
+        Processo de Desenvolvimento de Software Corporativo<br>
+        Projeto Conta Comigo: SAFE – IFRN
     </p>
 </header>
 
@@ -145,70 +157,140 @@
 <section id="visao">
     <h2>Visão Geral do Processo</h2>
     <p>
-        O <strong>SAFE-Ágil</strong> é um processo ágil definido para apoiar o desenvolvimento
-        e a evolução do sistema <strong>Conta Comigo: SAFE</strong>, cujo objetivo é gerenciar
-        bolsas e auxílios fornecidos aos alunos do IFRN.
+        O <strong>SAFE-Ágil</strong> é um processo de desenvolvimento de software ágil definido
+        especificamente para o projeto <strong>Conta Comigo: SAFE</strong>, sistema corporativo
+        do IFRN responsável pelo gerenciamento de bolsas e auxílios estudantis.
     </p>
     <p>
-        O processo busca garantir maior transparência para os alunos e maior eficiência
-        no trabalho realizado pelas assistentes sociais, combinando práticas ágeis com
-        as necessidades de um ambiente corporativo e institucional.
+        O processo foi concebido para atender às características de um ambiente institucional,
+        no qual há múltiplos stakeholders, necessidade de rastreabilidade, controle,
+        qualidade e implantação segura. Para isso, o SAFE-Ágil combina práticas ágeis com
+        atividades formais de gerência, testes e implantação.
     </p>
 </section>
 
 <section id="diagrama">
     <h2>Diagrama de Atividades do Processo</h2>
     <div class="diagrama">
-        <!-- Substitua pelo nome da sua imagem -->
         <img src="diagrama-processo.png" alt="Diagrama de Atividades SAFE-Ágil">
-        <p><em>Fluxo iterativo e incremental do SAFE-Ágil</em></p>
+        <p><em>O processo é iterativo e incremental, organizado em ciclos de desenvolvimento (sprints).</em></p>
     </div>
 </section>
 
 <section id="atividades">
     <h2>Atividades do Processo</h2>
-    <ul>
-        <li><strong>Identificação da Necessidade:</strong> Levantamento das demandas junto à assistência estudantil do IFRN.</li>
-        <li><strong>Levantamento e Refinamento de Requisitos:</strong> Reuniões com assistentes sociais e definição de histórias de usuário.</li>
-        <li><strong>Priorização do Backlog:</strong> Organização das demandas pelo Product Owner conforme impacto institucional.</li>
-        <li><strong>Planejamento da Sprint:</strong> Definição do escopo e metas do ciclo de desenvolvimento.</li>
-        <li><strong>Desenvolvimento:</strong> Implementação incremental das funcionalidades do sistema.</li>
-        <li><strong>Testes:</strong> Execução de testes funcionais, de regressão e validação com usuários.</li>
-        <li><strong>Implantação:</strong> Publicação do sistema em ambiente institucional controlado.</li>
-        <li><strong>Monitoramento e Feedback:</strong> Coleta de feedback e melhoria contínua do sistema.</li>
-    </ul>
+
+    <h3>Identificação da Necessidade</h3>
+    <p>
+        Nesta atividade são identificadas as demandas relacionadas à assistência estudantil
+        do IFRN, como novos tipos de bolsas, alterações em auxílios existentes ou necessidades
+        de relatórios e acompanhamentos. Essas demandas surgem, principalmente, a partir das
+        assistentes sociais e da gestão institucional.
+    </p>
+
+    <h3>Levantamento e Refinamento de Requisitos</h3>
+    <p>
+        As necessidades identificadas são detalhadas em requisitos funcionais e não funcionais,
+        utilizando histórias de usuário. O refinamento ocorre de forma colaborativa, garantindo
+        que os requisitos sejam compreendidos pela equipe de desenvolvimento e alinhados à
+        realidade operacional do setor.
+    </p>
+
+    <h3>Priorização do Backlog</h3>
+    <p>
+        Os requisitos levantados são organizados em um backlog priorizado pelo Product Owner,
+        considerando critérios como impacto social, urgência institucional, complexidade técnica
+        e valor para os usuários finais.
+    </p>
+
+    <h3>Planejamento da Sprint</h3>
+    <p>
+        No planejamento da sprint, a equipe define quais itens do backlog serão desenvolvidos
+        no próximo ciclo, estabelecendo metas claras, estimativas de esforço e responsabilidades.
+        Essa atividade também contribui para o acompanhamento e a gerência do projeto.
+    </p>
+
+    <h3>Desenvolvimento</h3>
+    <p>
+        A fase de desenvolvimento consiste na implementação incremental das funcionalidades
+        planejadas, seguindo boas práticas de codificação, versionamento de código e integração
+        contínua, garantindo evolução constante do sistema.
+    </p>
+
+    <h3>Testes</h3>
+    <p>
+        Os testes são realizados de forma contínua ao longo da sprint e ao final do ciclo,
+        incluindo testes funcionais, testes de regressão e validação com dados anonimizados.
+        Essa atividade assegura a qualidade e confiabilidade do sistema.
+    </p>
+
+    <h3>Implantação</h3>
+    <p>
+        Após a validação, o sistema é implantado em ambiente institucional controlado, com
+        versionamento adequado e cuidados relacionados à segurança, disponibilidade e acesso
+        dos usuários.
+    </p>
+
+    <h3>Monitoramento e Feedback</h3>
+    <p>
+        Após a implantação, o sistema é monitorado e o feedback dos usuários, especialmente
+        das assistentes sociais, é coletado para identificar melhorias, correções e novas
+        demandas, alimentando o próximo ciclo do processo.
+    </p>
 </section>
 
 <section id="papeis">
     <h2>Papéis e Responsabilidades</h2>
+
     <table>
         <tr>
             <th>Papel</th>
-            <th>Responsabilidades</th>
+            <th>Descrição</th>
         </tr>
         <tr>
-            <td>Product Owner</td>
-            <td>Representar os stakeholders e priorizar o backlog.</td>
+            <td><strong>Product Owner</strong></td>
+            <td>
+                Responsável por representar os interesses da assistência estudantil e dos
+                demais stakeholders, definindo prioridades, validando requisitos e garantindo
+                que o sistema gere valor institucional.
+            </td>
         </tr>
         <tr>
-            <td>Scrum Master</td>
-            <td>Garantir o correto uso do processo e remover impedimentos.</td>
+            <td><strong>Scrum Master</strong></td>
+            <td>
+                Atua como facilitador do processo, garantindo que as práticas ágeis sejam
+                seguidas, removendo impedimentos e apoiando a equipe no cumprimento do processo
+                definido.
+            </td>
         </tr>
         <tr>
-            <td>Desenvolvedores</td>
-            <td>Implementar e manter as funcionalidades do sistema.</td>
+            <td><strong>Desenvolvedores</strong></td>
+            <td>
+                Responsáveis pela implementação das funcionalidades do sistema, correção de
+                defeitos, manutenção do código e colaboração nas atividades de planejamento
+                e testes.
+            </td>
         </tr>
         <tr>
-            <td>QA/Testador</td>
-            <td>Planejar e executar testes de qualidade.</td>
+            <td><strong>QA / Testador</strong></td>
+            <td>
+                Planeja e executa os testes do sistema, garantindo que os requisitos sejam
+                atendidos e que o software apresente qualidade antes da implantação.
+            </td>
         </tr>
         <tr>
-            <td>DevOps</td>
-            <td>Realizar a implantação e o monitoramento do sistema.</td>
+            <td><strong>DevOps</strong></td>
+            <td>
+                Responsável pelos ambientes de implantação, automação de deploy, monitoramento
+                e garantia da disponibilidade do sistema em produção.
+            </td>
         </tr>
         <tr>
-            <td>Assistentes Sociais</td>
-            <td>Validar funcionalidades e fornecer feedback.</td>
+            <td><strong>Assistentes Sociais</strong></td>
+            <td>
+                Usuários-chave do sistema, participam da validação das funcionalidades e
+                fornecem feedback contínuo para a evolução do SAFE.
+            </td>
         </tr>
     </table>
 </section>
@@ -216,18 +298,18 @@
 <section id="praticas">
     <h2>Práticas Ágeis Aplicadas</h2>
     <ul>
-        <li>Planejamento de Sprint</li>
-        <li>Daily Meeting</li>
-        <li>Backlog priorizado</li>
-        <li>Integração contínua</li>
-        <li>Testes contínuos</li>
-        <li>Deploy incremental</li>
-        <li>Retrospectiva</li>
+        <li><strong>Planejamento de Sprint</strong> (Scrum)</li>
+        <li><strong>Daily Meeting</strong> para acompanhamento do progresso (Scrum)</li>
+        <li><strong>Backlog priorizado e refinado continuamente</strong> (Scrum)</li>
+        <li><strong>Integração contínua</strong> (Extreme Programming – XP)</li>
+        <li><strong>Testes contínuos e validação a cada ciclo</strong> (Extreme Programming – XP)</li>
+        <li><strong>Deploy incremental</strong> (DevOps)</li>
+        <li><strong>Retrospectiva</strong> para melhoria contínua do processo (Scrum)</li>
     </ul>
 </section>
 
 <footer>
-    <p>Equipe: Emanuelly Karine e Rebeca Noemi</p>
+    <p>Projeto desenvolvido para a disciplina de PDS Corporativo – IFRN</p>
 </footer>
 
 </body>
